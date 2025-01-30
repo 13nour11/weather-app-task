@@ -20,7 +20,7 @@ const WeatherApp = () => {
       setError("");
       try {
         const { data } = await axios.get(
-          `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}`
+          `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}` // Changed to HTTPS
         );
 
         if (data.error) {
